@@ -5,35 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form For Registration</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
-    <form name="contactform" onsubmit="return formvalidate()" action="abc.php" method="post">
+    <form name="contactForm" onsubmit="return formValidate()" action="abc.php" method="post">
         
         <h2>Application Form</h2>
 
         <div class="form_content">
             <label for="name">Full Name</label>
             <input type="text" name="name" id="name">
-            <div class="error" id="nameerr"></div>
+            <div class="error" id="nameErr"></div>
         </div>
 
         <div class="form_content">
             <label for="Email">Email</label>
             <input type="text" name="email" id="Email">
-            <div class="error" id="emailerr"></div>
+            <div class="error" id="emailErr"></div>
         </div>
 
         <div class="form_content">
-            <label for="mobile">Mobile Number</label>
-            <input type="text" name="Number" id="mobile" maxlength="10">
-            <div class="error" id="mobileerr"></div>
+            <label for="mobileNu">Mobile Number</label>
+            <input type="text" name="mobile" id="mobileNu">
+            <div class="error" id="mobileErr"></div>
         </div>
 
 
         <div class="form_content">
             <label for="country">Country</label>
             <select name="country">
-                <option value="select">Select</option>
+                <option value="Select">Select</option>
                 <option value="India">India</option>
                 <option value="England">England</option>
                 <option value="Australia">Australia</option>
@@ -41,7 +42,7 @@
                 <option value="Other">Other</option>
             </select>
 
-            <div class="error" id="countryerr"></div>
+            <div class="error" id="countryErr"></div>
         </div>
 
         <div class="form_content">
@@ -50,14 +51,14 @@
                 <label for="male"><input type="radio" name="gender" id="male" value="male">Male</label>
 
                 <label for="female"><input type="radio" name="gender" id="female" value="female">Female</label>
-
-                <label for="Other"><input type="radio" name="gender" id="Other" value="Other">Other</label>
             </div>
+
+            <div class="error" id="genderErr"></div>
         </div>
 
 
         <div class="form_content">
-            <label for="hobbies[]">Hobbies<i>(Optional)</i></label>
+            <label for="hobbies">Hobbies<i>(Optional)</i></label>
              <div class="form-bt">
                  <label for="Sports"><input type="checkbox" name="hobbies[]"  value="Sports">Sports</label>
  
@@ -82,6 +83,5 @@
     </form>
 
 
-    <script src="js/form.js"></script>
 </body>
 </html>
